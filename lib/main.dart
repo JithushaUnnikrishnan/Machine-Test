@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/Cart.dart';
+import 'package:untitled1/bottom.dart';
 import 'package:untitled1/photo.dart';
 import 'package:untitled1/signup.dart';
 import 'package:untitled1/single.dart';
