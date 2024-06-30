@@ -34,52 +34,55 @@ class _PhotoState extends State<Photo> {
                     )
                   ],
                 ),
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Container(
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 240, left: 50),
-                          child: Text(
-                            "Monstera",
-                            style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.w600, fontSize: 20),
+                Padding(
+                  padding: const EdgeInsets.only(right: 0),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 240, left: 50),
+                            child: Text(
+                              "Monstera",
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w600, fontSize: 20),
+                            ),
+                          ),
+                          height: 305,
+                          width: 186,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
-                        height: 305,
-                        width: 186,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Container(
-                        height: 305,
-                        width: 186,
-                        child: Padding(
-                          padding: const EdgeInsets.only(left: 55, top: 240),
-                          child: Text(
-                            "Pothos",
-                            style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.w600, fontSize: 20),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          height: 305,
+                          width: 186,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 55, top: 240),
+                            child: Text(
+                              "Pothos",
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w600, fontSize: 20),
+                            ),
+                          ),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(15),
                           ),
                         ),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(10.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Container(
                         height: 305,
                         width: 186,

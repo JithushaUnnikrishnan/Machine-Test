@@ -76,7 +76,7 @@ class _CartState extends State<Cart> {
               ),
             ),
             SizedBox(
-              height: 500,
+              height: 450,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

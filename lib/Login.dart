@@ -58,105 +58,107 @@ class _LoginState extends State<Login> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                           vertical: 50, horizontal: 40),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            "Email",
-                            style: GoogleFonts.poppins(
-                                fontSize: 15, fontWeight: FontWeight.w400),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          TextFormField(
-                            decoration: InputDecoration(
-                                border: OutlineInputBorder(borderRadius: BorderRadius.circular(7),borderSide: BorderSide.none),
-                                prefixIcon: Icon(
-                                  Icons.email_outlined,
-                                  color: Colors.green,
+                      child: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "Email",
+                              style: GoogleFonts.poppins(
+                                  fontSize: 15, fontWeight: FontWeight.w400),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            TextFormField(
+                              decoration: InputDecoration(
+                                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(7),borderSide: BorderSide.none),
+                                  prefixIcon: Icon(
+                                    Icons.email_outlined,
+                                    color: Colors.green,
+                                  ),
+                                  hintText: "Enter your Email Id",
+                                  hintStyle: GoogleFonts.poppins(
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                  filled: true,fillColor: Color.fromRGBO(231, 249, 218, 1)),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              "Password",
+                              style: GoogleFonts.poppins(
+                                  fontSize: 15, fontWeight: FontWeight.w400),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            TextFormField(
+                              decoration: InputDecoration(
+                                  border: OutlineInputBorder(borderRadius: BorderRadius.circular(7),borderSide: BorderSide.none),
+                                  prefixIcon: Icon(
+                                    CupertinoIcons.lock,
+                                    color: Colors.green,
+                                  ),
+                                  hintText: "Enter Your Password",
+                                  fillColor:  Color(0xFFE7F9DA),
+                                  hintStyle: GoogleFonts.poppins(
+                                      fontSize: 15, fontWeight: FontWeight.w400),filled: true,),
+                            ),
+                            SizedBox(height: 50),
+                            InkWell(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Bottom()));
+                              },
+                              child: Center(
+                                child: Container(
+                                  height: 46,
+                                  width: 296,
+                                  child: Center(
+                                      child: Text(
+                                    "LOGIN",
+                                    style: GoogleFonts.poppins(
+                                        fontSize: 20,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.w600),
+                                  )),
+                                  decoration: BoxDecoration(
+                                      color: Color(0xFF92D722),
+                                      borderRadius: BorderRadius.circular(9)),
                                 ),
-                                hintText: "Enter your Email Id",
-                                hintStyle: GoogleFonts.poppins(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                                filled: true,fillColor: Color.fromRGBO(231, 249, 218, 1)),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Text(
-                            "Password",
-                            style: GoogleFonts.poppins(
-                                fontSize: 15, fontWeight: FontWeight.w400),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          TextFormField(
-                            decoration: InputDecoration(
-                                border: OutlineInputBorder(borderRadius: BorderRadius.circular(7),borderSide: BorderSide.none),
-                                prefixIcon: Icon(
-                                  CupertinoIcons.lock,
-                                  color: Colors.green,
-                                ),
-                                hintText: "Enter Your Password",
-                                fillColor:  Color(0xFFE7F9DA),
-                                hintStyle: GoogleFonts.poppins(
-                                    fontSize: 15, fontWeight: FontWeight.w400),filled: true,),
-                          ),
-                          SizedBox(height: 50),
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => Bottom()));
-                            },
-                            child: Center(
-                              child: Container(
-                                height: 46,
-                                width: 296,
-                                child: Center(
-                                    child: Text(
-                                  "LOGIN",
-                                  style: GoogleFonts.poppins(
-                                      fontSize: 20,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600),
-                                )),
-                                decoration: BoxDecoration(
-                                    color: Color(0xFF92D722),
-                                    borderRadius: BorderRadius.circular(9)),
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Center(
-                              child: InkWell(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => Signup()));
-                                  },
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(left: 0),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          "Create New Account?",
-                                          style: GoogleFonts.poppins(fontSize: 11),
-                                        ),
-                                        Text("Signup",style: GoogleFonts.poppins(fontSize: 11,fontWeight: FontWeight.w400,color: Colors.blue),)
-                                      ],
-                                    ),
-                                  )))
-                        ],
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Center(
+                                child: InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => Signup()));
+                                    },
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(left: 0),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "Create New Account?",
+                                            style: GoogleFonts.poppins(fontSize: 11),
+                                          ),
+                                          Text("Signup",style: GoogleFonts.poppins(fontSize: 11,fontWeight: FontWeight.w400,color: Colors.blue),)
+                                        ],
+                                      ),
+                                    )))
+                          ],
+                        ),
                       ),
                     ),
                   ),

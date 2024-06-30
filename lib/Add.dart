@@ -113,7 +113,7 @@ class _AddState extends State<Add> {
                     ],
                   ),
                 ),
-                height: 540,
+                height: 570,
                 width: 343,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(28),
